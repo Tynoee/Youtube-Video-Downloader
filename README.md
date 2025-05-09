@@ -20,6 +20,7 @@ This is a Python-based YouTube video downloader that uses yt-dlp to download vid
 
 ```bash
 pip install yt-dlp
+```
 
 ## 💡 Usage
 
