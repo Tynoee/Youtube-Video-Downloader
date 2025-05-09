@@ -4,10 +4,15 @@ from tkinter import filedialog
 
 def download_vid(url, path):
     try:
-        yt = Youtube(url)
+        yt = YouTube(url)
         streams = yt.streams.filter(progressive = True, file_extension = "mp4")
-        highest_res_stream = streams.get_highest_res
-    
+        highest_res_stream = streams.get_highest_resolution()
+        highest_res_stream.download(output_path = path)
+        print("Video downloaded successfully!")
     except Exception as e:
         print(e)
-        
+
+url = "https://www.youtube.com/watch?v=ZY1f7E_2iFA"
+path = "C:/Users/Admin/Desktop/Repositories/pythonYoutube-Video-Downloader"
+
+download_vid(url, path)      
