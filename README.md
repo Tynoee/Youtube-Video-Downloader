@@ -11,8 +11,8 @@ This is a Python-based YouTube video downloader that uses yt-dlp to download vid
 ## 📦 Requirements
 - Python 3.6+
 - `yt-dlp`
-- `tkinter` (usually bundled with Python)
-- `ffmpeg` (for merging video/audio)
+- `tkinter` 
+- `ffmpeg` - for merging video/audio
 
 ## 🔧 Installation
 
